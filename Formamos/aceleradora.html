@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../Stylesheets/sm-frame.css">
     <link rel="stylesheet" type="text/css" href="../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../Stylesheets/bubbles/css">
+    <link rel="stylesheet" href="../Stylesheets/jquery.mCustomScrollbar.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../Scripts/Sidemenu.js"></script>
@@ -26,6 +27,7 @@
     <script src="../Scripts/Acelerados.js"></script>
     <script src="../Scripts/BubbleShow.js"></script>
     <script src="../Scripts/Conections.js"></script>
+    <script src="../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -45,7 +47,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../nuestra_historia.html"><img
+            <a class="navbar-brand" href="../index.html"><img
                     src="../Contents/logos&botones/Logo Ynnovadores PGN.png" class="center-img1"></a>
         </div>
 
@@ -69,7 +71,7 @@
                         <li><a href="../Creamos/laboratorio_patriota.html">Lab Patriota</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Los Patriotas</a></li>
+                <li><a href="../los_patriotas.html">Los Patriotas</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="social"><a class="sm-icon" href="https://www.facebook.com/ynnovadoresperu/">
@@ -107,10 +109,12 @@
         <div class="description">
             <p class="st">"Le ponemos los reflectores a tu emprendimiento"</p>
             <div class="overflow">
-                <p class="txt">Impulsamos emprendimientos con impacto social en etapas tempranas. Al desarrollarles
-                    planes de relacionamiento y de comunicación, ampliamos su red de contactos y aumentamos su
-                    exposición en medios de comunicación. </br></br>Un equipo de mentores los acompaña en este proceso
-                    de aceleramiento.</p>
+                <div class="mCustomScrollbar" data-mcs-theme="dark">
+                    <p class="txt">Impulsamos emprendimientos con impacto social en etapas tempranas. Al desarrollarles
+                        planes de relacionamiento y de comunicación, ampliamos su red de contactos y aumentamos su
+                        exposición en medios de comunicación. </br></br>Un equipo de mentores los acompaña en este proceso
+                        de aceleramiento.</p>
+                </div>
             </div>
         </div>
 
@@ -352,5 +356,12 @@
         </div>
     </div>
 </div>
-
+<script>
+    (function($){
+                $(window).on("load",function(){
+                    $(".content").mCustomScrollbar();
+                });
+            }
+    )(jQuery);
+</script>
 </body>

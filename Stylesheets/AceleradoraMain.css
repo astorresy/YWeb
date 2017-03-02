@@ -125,6 +125,7 @@ a, a:visited {
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	border: solid 0.5vh #6d6e70;
+	z-index: 9;
 }
 
 .title {
