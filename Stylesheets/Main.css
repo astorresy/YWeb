@@ -303,7 +303,7 @@ a:visited {
 	border-radius: 50%;
 	border: 0.64vh solid #dfdfdf;
 	background-color: #fdfdfd;
-	font-family: 'Nunito' sans-serif;
+	font-family: 'Nunito',sans-serif;
 	vertical-align: middle;
 	text-align: center;
 	text-transform: uppercase;
@@ -330,4 +330,99 @@ a:visited {
 /*Tweaks to the side menu */
 #sidemenu #back-button {
 	display: none;
+}
+@media screen and (max-width: 765px) {
+	.center-img1 {
+		width: 100%;
+		max-width: 50px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		text-align: center;
+		color: #777;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		text-align: center;
+	}
+	ul.nav.navbar-nav.navbar-right>li.social {
+		display: inline-block;
+	}
+	ul.nav.navbar-nav.navbar-right {
+		text-align: center;
+	}
+	.navbar-brand {
+		height: 100px!important;
+		padding: 9px 15px!important;
+	}
+	.navbar-toggle {
+		margin-top: 30px!important;
+	}
+
+	#page-wrap {
+
+		left:0;
+		width: 100%;
+		height: 95%;
+		min-width: 100%;
+		max-width: 100%;
+	}
+	.patriotas-before {
+		position: absolute;
+		top: 0;
+	}
+	.formamos-before {
+		position: absolute;
+		top: 30vh;
+		left: 10vw;
+		right: 0;
+
+	}
+	.asesorias-container {
+		position: absolute;
+		top: 50vh;
+		left: 13vw;
+		right: 77vw;
+	}
+	.aceleradora-container {
+		position: absolute;
+		top: 65vh;
+		left: 13vw;
+		right: 77vw;
+	}
+	.incubadora-container {
+		position: absolute;
+		top: 80vh;
+		left: 13vw;
+		right: 77vw;
+	}
+	.center-img {
+		width: 100%;
+		max-width: 80px;
+	}
+	.center {
+		position: absolute;
+		top: 19.6vh;
+		left: 40vw;
+		right: 40vw;
+		z-index: 1;
+	}
+	.creamos-before {
+		position: absolute;
+		top: 30vh;
+		left: auto;
+		right: 10vw;
+	}
+	.lab-corp-container {
+		position: absolute;
+		top: 50vh;
+		left: 67vw;
+	}
+	.lab-pat-container {
+		position: absolute;
+		top: 65vh;
+		left: 67vw;
+	}
+	.background{
+        display: none;
+		background-size: cover!important;
+	}
 }

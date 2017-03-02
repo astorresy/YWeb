@@ -8,6 +8,12 @@
 
 	<link rel="stylesheet" type="text/css"
    		 href="https://fonts.googleapis.com/css?family=Nunito:bold,light,regular">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../Stylesheets/Shared.css">
 	<link rel="stylesheet" type="text/css" href="../../Stylesheets/Acelerados.css" />
 	<link rel="stylesheet" type="text/css" href="../../Stylesheets/pickapp.css" />
@@ -19,32 +25,91 @@
 	<script src="../../Scripts/Acelerados.js"></script>
 	<script src="../../Scripts/Sidemenu.js"></script>
 	<script src="../../Scripts/NavigationAs.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-	<iframe src=../../sidemenu.html id=sm-frame> </iframe>
+<nav class="navbar navbar-default visible-xs">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="../../nuestra_historia.html"><img
+					src="../../Contents/logos&botones/Logo Ynnovadores PGN.png" class="center-img1"></a>
+		</div>
 
-		<div id="page-wrap">
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Formamos<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../../Formamos/incubadora.html">Incubadora</a></li>
+						<li><a href="../../Formamos/aceleradora.html">Aceleradora</a></li>
+						<li><a href="../../Formamos/asesorias.html">Asesorias</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Creamos<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../../Creamos/laboratorio_corporativo.html">Lab Corporativo</a></li>
+						<li><a href="../../Creamos/laboratorio_patriota.html">Lab Patriota</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Los Patriotas</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="social"><a class="sm-icon" href="https://www.facebook.com/ynnovadoresperu/">
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>
+
+				</a></li>
+				<li class="social"><a class="sm-icon" href="https://twitter.com/Ynnovadores">
+					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+				</a></li>
+				<li class="social"><a class="sm-icon" href="https://vimeo.com/user31764736">
+					<i class="fa fa-vimeo-square" aria-hidden="true"></i>
+				</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<!--Code for side menu-->
+<iframe class="hidden-xs" src=../../sidemenu.html id=sm-frame></iframe>
+
+
+<div id="page-wrap">
 			<div id="page-background"></div>
 			<div class="bubble-back">
 				<div class="bubble formamos">
 					<a href="" title="Formamos"><p class="formamos-p">Formamos</p></a>
 				</div>
 				<div class="bubble2 aceleradora">
-				<a href="../Aceleradora.html" title="Aceleradora"><p class="aceleradora-p">Aceleradora</p></a>
+				<a href="../aceleradora.html" title="Aceleradora"><p class="aceleradora-p">Aceleradora</p></a>
 				</div>
 			</div>
 
 				<div id="logo">
 					<img src="../../Contents/logos&botones/perfil_logo_felix_ipanaque.png" class="logo">
-					<p class="quote">“Potenciamos el comercio electrónico revolucionando la entrega de pedidos”.</p>
+					<p class="quote hidden-xs">“Potenciamos el comercio electrónico revolucionando la entrega de pedidos”.</p>
 				</div>
 
 			<div id="info">
-				<button class="video"></button>
+				<button class="video hidden-xs"></button>
 				<div class="story">
+					<p class="parrafo-story visible-xs">“Potenciamos el comercio electrónico revolucionando la entrega de pedidos”.</p>
+					<button class="buttonvideo visible-xs"></button>
 					<p class="intro">¿En qué consiste el proyecto?</p>
 					<p>PickApp es una plataforma de repartos B2C que, al utilizar las maleteras de los autos, acelera y personaliza despachos utilizando encuestadores independientes (pickers). Así, aprovecha el desplazamiento de las personas para ofrecer un servicio de entrega eficiente.</p>
 					<p>Su tecnología le permite estudiar el perfil del consumidor en cada entrega, las 24 horas del día, y su modelo de negocio es una comisión por cada pedido asignado a sus pickers. Además, el filtro de selección de sus pickers a través de un algoritmo de procesamiento de lenguaje natural garantiza la confiabilidad de su operación como nunca antes se había logrado en el Perú.</p>

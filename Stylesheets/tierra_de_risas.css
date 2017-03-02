@@ -20,3 +20,116 @@
 .story p {
 	color: white;
 }
+@media screen and (max-width: 765px) {
+	body{
+		text-align: center;
+		font-size: 100%;
+		background-color: #000;
+	}
+	.center-img1 {
+		width: 100%;
+		max-width: 50px;
+	}
+	.navbar-default{
+		border-radius: 0;
+	}
+	.navbar-default .navbar-nav>li>a {
+		text-align: center;
+		color: #777;
+	}
+	.navbar{
+		margin:auto!important;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		text-align: center;
+	}
+	ul.nav.navbar-nav.navbar-right>li.social {
+		display: inline-block;
+	}
+	ul.nav.navbar-nav.navbar-right {
+		text-align: center;
+	}
+	.navbar-brand {
+		height: 100px!important;
+		padding: 9px 15px!important;
+	}
+	.navbar-toggle {
+		margin-top: 30px!important;
+	}
+
+	#page-wrap {
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+	#page-background {
+		background-size: cover;
+		height: 36vh;
+	}
+
+	#logo {
+		position: absolute;
+		top: 22vh;
+		left: 28vw;
+		-moz-border-radius: 20%;
+		-webkit-border-radius: 20%;
+		border-radius: 0;
+		border: solid 2px rgb(130, 130, 130);
+		background-color: white;
+		height: 14vh;
+		width: 25vh;
+		text-align: center;
+	}
+	.logo {
+		position: absolute;
+		top: 7%;
+		left: 17%;
+		right: 0;
+		width: 62%;
+	}
+	.formamos {
+		position: absolute;
+		top: 2.4vh;
+		left: 10.7vw;
+	}
+	.incubadora {
+		position: absolute;
+		top: 4.74vh;
+		left: 14.4vw;
+	}
+	#info {
+		width: 100%;
+		height: 20vw;
+		position: absolute;
+		top: 25vw;
+		left: auto;
+	}
+	.story {
+		top: 24vh;
+	}
+	#info .story {
+		margin: auto 20px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		height: auto;
+	}
+	.contact {
+		position: relative;
+		top: 50vh;
+		left: auto;
+		margin: auto 20px;
+		font-size: 2.4vh;
+		font-weight: lighter;
+		color: white;
+	}
+	ul.facebook {
+		display: none;
+	}
+	.pad15{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+}
+

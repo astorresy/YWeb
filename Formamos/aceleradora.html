@@ -1,86 +1,356 @@
 <head>
-	<meta charset = "UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title> Ynnovadores | Aceleradora </title>
+    <title> Ynnovadores | Aceleradora </title>
 
-	<meta property="og:url" content="http://losynnovadores.com/Formamos/aceleradora/">
+    <meta property="og:url" content="http://losynnovadores.com/Formamos/aceleradora/">
 
-	<link rel="stylesheet" type="text/css"
-   		 href="https://fonts.googleapis.com/css?family=Nunito:bold,light,regular">
-	<link rel="stylesheet" type="text/css" href="../Stylesheets/Shared.css">
-	<link rel="stylesheet" type="text/css" href="../Stylesheets/AceleradoraMain.css" />
-	<link rel="stylesheet" type="text/css" href="../Stylesheets/sm-frame.css">
-	<link rel="stylesheet" type="text/css" href="../Stylesheets/style-ie.css" />
-	<link rel="stylesheet" type="text/css" href="../Stylesheets/bubbles/css">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Nunito:bold,light,regular">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/Shared.css">
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/AceleradoraMain.css"/>
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/sm-frame.css">
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/style-ie.css"/>
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/bubbles/css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="../Scripts/Sidemenu.js"></script>
-	<script src="../Scripts/NavigationAs.js"></script>
-	<script src="../Scripts/Acelerados.js"></script>
-	<script src="../Scripts/BubbleShow.js"></script>
-	<script src="../Scripts/Conections.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../Scripts/Sidemenu.js"></script>
+    <script src="../Scripts/NavigationAs.js"></script>
+    <script src="../Scripts/Acelerados.js"></script>
+    <script src="../Scripts/BubbleShow.js"></script>
+    <script src="../Scripts/Conections.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-		<!--Code for side menu-->
-		<iframe src=../sidemenu.html id=sm-frame> </iframe>
+<nav class="navbar navbar-default visible-xs">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../nuestra_historia.html"><img
+                    src="../Contents/logos&botones/Logo Ynnovadores PGN.png" class="center-img1"></a>
+        </div>
 
-		<div id="page-wrap">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Formamos<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../Formamos/incubadora.html">Incubadora</a></li>
+                        <li><a href="../Formamos/aceleradora.html">Aceleradora</a></li>
+                        <li><a href="../Formamos/asesorias.html">Asesorias</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Creamos<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../Creamos/laboratorio_corporativo.html">Lab Corporativo</a></li>
+                        <li><a href="../Creamos/laboratorio_patriota.html">Lab Patriota</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Los Patriotas</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="social"><a class="sm-icon" href="https://www.facebook.com/ynnovadoresperu/">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
 
-			<div id="page-background"></div>
+                </a></li>
+                <li class="social"><a class="sm-icon" href="https://twitter.com/Ynnovadores">
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a></li>
+                <li class="social"><a class="sm-icon" href="https://vimeo.com/user31764736">
+                    <i class="fa fa-vimeo-square" aria-hidden="true"></i>
+                </a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--Code for side menu-->
+<iframe class="hidden-xs" src=../sidemenu.html id=sm-frame></iframe>
 
-			<div id="inside">
-				<div class="background"></div>
-				<div class="bubble formamos-before">
-					<div class="bubble formamos">
-						<p class="formamos-p">Formamos</p>
-					</div>
-				</div>
-				<div class="bubble aceleradora">
-					<a href="aceleradora.html" title="Aceleradora"><p class="form-lvl-p">Aceleradora</p></a>
-				</div>
+<div id="page-wrap">
 
-				<div class="description">
-					<p class="st">"Le ponemos los reflectores a tu emprendimiento"</p>
-					<div class="overflow">
-						<p class="txt">Impulsamos emprendimientos con impacto social en etapas tempranas. Al desarrollarles planes de relacionamiento y de comunicación, ampliamos su red de contactos y aumentamos su exposición en medios de comunicación. </br></br>Un equipo de mentores los acompaña en este proceso de aceleramiento.</p>
-					</div>
-				</div>
+    <div id="page-background"></div>
 
-				<div class="bubble-constellation">
-					<a href="acelerados/Asociacion_Taller_Ninos.html"><div id="Asociacion_Taller_Ninos" class="sphere"></div></a>
-					<a href="acelerados/Atomika.html"><div id="Atomika" class="sphere"></div></a>
-					<a href="acelerados/Bederr.html"><div id="Bederr" class="sphere"></div></a>
-					<a href="acelerados/Bocadio.html"><div id="Bocadio" class="sphere"></div></a>
-					<a href="acelerados/Diloo.html"><div id="Diloo" class="sphere"></div></a>
-					<a href="acelerados/Doktuz.html"><div id="Doktuz" class="sphere"></div></a>
-					<a href="acelerados/Donante_Pendiente.html" ><div id="Donante_Pendiente" class="sphere"></div></a>
-					<a href="acelerados/Equus_Corporation.html"><div id="Equus_Corporation" class="sphere"></div></a>
-					<a href="acelerados/Health_Coaches.html"><div id="Health_Coaches" class="sphere"></div></a>
-					<a href="acelerados/Infusion.html"><div id="Infusion" class="sphere"></div></a>
-					<a href="acelerados/Kallku.html"><div id="Kallku" class="sphere"></div></a>
-					<a href="acelerados/Kokisimo.html"><div id="Kokisimo" class="sphere"></div></a>
-					<a href="acelerados/Lulipa.html"><div id="Lulipa" class="sphere"></div></a>
-					<a href="acelerados/Mi_Media_Manzana.html"><div id="Mi_Media_Manzana" class="sphere"></div></a>
-					<a href="acelerados/Moldes.html"><div id="Moldes" class="sphere"></div></a>
-					<a href="acelerados/My_Bump_Ac.html"><div id="My_Bump_Ac" class="sphere"></div></a>
-					<a href="acelerados/Peru_Apps.html"><div id="Peru_Apps" class="sphere"></div></a>
-					<a href="acelerados/PickApp.html"><div id="PickApp" class="sphere"></div></a>
-					<a href="acelerados/Planeta_Oceano.html"><div id="Planeta_Oceano" class="sphere"></div></a>
-					<a href="acelerados/Qempo.html"><div id="Qempo" class="sphere"></div></a>
-					<a href="acelerados/Riqra.html"><div id="Riqra" class="sphere"></div></a>
-					<a href="acelerados/Spray_Wash_Ac.html"><div id="Spray_Wash_Ac" class="sphere"></div></a>
-					<a href="acelerados/Turismoi.html"><div id="Turismoi" class="sphere"></div></a>
-					<a href="acelerados/Up_Peru.html"><div id="Up_Peru" class="sphere"></div></a>
-					<a href="acelerados/Vecinos360.html"><div id="Vecinos360" class="sphere"></div></a>
-					<a href="acelerados/Yaqua.html"><div id="Yaqua" class="sphere"></div></a>
-					<a href="acelerados/Yunta.html"><div id="Yunta" class="sphere"></div></a>
-					<a href="acelerados/zenQbar.html"><div id="zenQbar" class="sphere"></div></a>
-				</div>
-			</div>
-		</div>
+    <div id="inside">
+        <div class="background"></div>
+        <div class="bubble formamos-before">
+            <div class="bubble formamos">
+                <p class="formamos-p">Formamos</p>
+            </div>
+        </div>
+        <div class="bubble aceleradora">
+            <a href="aceleradora.html" title="Aceleradora"><p class="form-lvl-p">Aceleradora</p></a>
+        </div>
+
+        <div class="description">
+            <p class="st">"Le ponemos los reflectores a tu emprendimiento"</p>
+            <div class="overflow">
+                <p class="txt">Impulsamos emprendimientos con impacto social en etapas tempranas. Al desarrollarles
+                    planes de relacionamiento y de comunicación, ampliamos su red de contactos y aumentamos su
+                    exposición en medios de comunicación. </br></br>Un equipo de mentores los acompaña en este proceso
+                    de aceleramiento.</p>
+            </div>
+        </div>
+
+        <div class="bubble-constellation hidden-xs">
+            <a href="acelerados/Asociacion_Taller_Ninos.html">
+                <div id="Asociacion_Taller_Ninos" class="sphere"></div>
+            </a>
+            <a href="acelerados/Atomika.html">
+                <div id="Atomika" class="sphere"></div>
+            </a>
+            <a href="acelerados/Bederr.html">
+                <div id="Bederr" class="sphere"></div>
+            </a>
+            <a href="acelerados/Bocadio.html">
+                <div id="Bocadio" class="sphere"></div>
+            </a>
+            <a href="acelerados/Diloo.html">
+                <div id="Diloo" class="sphere"></div>
+            </a>
+            <a href="acelerados/Doktuz.html">
+                <div id="Doktuz" class="sphere"></div>
+            </a>
+            <a href="acelerados/Donante_Pendiente.html">
+                <div id="Donante_Pendiente" class="sphere"></div>
+            </a>
+            <a href="acelerados/Equus_Corporation.html">
+                <div id="Equus_Corporation" class="sphere"></div>
+            </a>
+            <a href="acelerados/Health_Coaches.html">
+                <div id="Health_Coaches" class="sphere"></div>
+            </a>
+            <a href="acelerados/Infusion.html">
+                <div id="Infusion" class="sphere"></div>
+            </a>
+            <a href="acelerados/Kallku.html">
+                <div id="Kallku" class="sphere"></div>
+            </a>
+            <a href="acelerados/Kokisimo.html">
+                <div id="Kokisimo" class="sphere"></div>
+            </a>
+            <a href="acelerados/Lulipa.html">
+                <div id="Lulipa" class="sphere"></div>
+            </a>
+            <a href="acelerados/Mi_Media_Manzana.html">
+                <div id="Mi_Media_Manzana" class="sphere"></div>
+            </a>
+            <a href="acelerados/Moldes.html">
+                <div id="Moldes" class="sphere"></div>
+            </a>
+            <a href="acelerados/My_Bump_Ac.html">
+                <div id="My_Bump_Ac" class="sphere"></div>
+            </a>
+            <a href="acelerados/Peru_Apps.html">
+                <div id="Peru_Apps" class="sphere"></div>
+            </a>
+            <a href="acelerados/PickApp.html">
+                <div id="PickApp" class="sphere"></div>
+            </a>
+            <a href="acelerados/Planeta_Oceano.html">
+                <div id="Planeta_Oceano" class="sphere"></div>
+            </a>
+            <a href="acelerados/Qempo.html">
+                <div id="Qempo" class="sphere"></div>
+            </a>
+            <a href="acelerados/Riqra.html">
+                <div id="Riqra" class="sphere"></div>
+            </a>
+            <a href="acelerados/Spray_Wash_Ac.html">
+                <div id="Spray_Wash_Ac" class="sphere"></div>
+            </a>
+            <a href="acelerados/Turismoi.html">
+                <div id="Turismoi" class="sphere"></div>
+            </a>
+            <a href="acelerados/Up_Peru.html">
+                <div id="Up_Peru" class="sphere"></div>
+            </a>
+            <a href="acelerados/Vecinos360.html">
+                <div id="Vecinos360" class="sphere"></div>
+            </a>
+            <a href="acelerados/Yaqua.html">
+                <div id="Yaqua" class="sphere"></div>
+            </a>
+            <a href="acelerados/Yunta.html">
+                <div id="Yunta" class="sphere"></div>
+            </a>
+            <a href="acelerados/zenQbar.html">
+                <div id="zenQbar" class="sphere"></div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="Constellation visible-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="acelerados/Asociacion_Taller_Ninos.html">
+                    <img src="../Contents/fotos/MENU_sara_cifuentes.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Atomika.html">
+                    <img src="../Contents/fotos/MENU_ericka_pavletich.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Bederr.html">
+                    <img src="../Contents/fotos/MENU_mario_gil.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Bocadio.html">
+                    <img src="../Contents/fotos/MENU_diego_echecopar.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Diloo.html">
+                    <img src="../Contents/fotos/MENU_jose_ignacio_bernal.png" alt=""
+                         class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Doktuz.html">
+                    <img src="../Contents/fotos/MENU_abraham_abramovitz.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Donante_Pendiente.html">
+                    <img src="../Contents/fotos/MENU_vanessa_vargas.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Equus_Corporation.html">
+                    <img src="../Contents/fotos/MENU_paola_quintana.png" alt="" class="img-responsive center-block">
+                </a>
+
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Health_Coaches.html">
+                    <img src="../Contents/fotos/MENU_erika_echegaray.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Infusion.html">
+                    <img src="../Contents/fotos/MENU_blythe.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Kallku.html">
+                    <img src="../Contents/fotos/MENU_vanesa_rubina.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Kokisimo.html">
+                    <img src="../Contents/fotos/MENU_brenda_herrera.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Lulipa.html">
+                    <img src="../Contents/fotos/MENU_nati_agois.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Mi_Media_Manzana.html">
+                    <img src="../Contents/fotos/MENU_pedro_neira.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Moldes.html">
+                    <img src="../Contents/fotos/MENU_katia_de_la_cruz.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/My_Bump_Ac.html">
+                    <img src="../Contents/fotos/MENU_luciana_rey.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Peru_Apps.html">
+                    <img src="../Contents/fotos/MENU_julio_ramon.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/PickApp.html">
+                    <img src="../Contents/fotos/MENU_felix_ipanaque.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Planeta_Oceano.html">
+                    <img src="../Contents/fotos/MENU_kerstin_forsberg.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Qempo.html">
+                    <img src="../Contents/fotos/MENU_anson_tou.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Riqra.html">
+                    <img src="../Contents/fotos/MENU_jaime_chiarella.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Spray_Wash_Ac.html">
+                    <img src="../Contents/fotos/MENU_ricardo_armas_samuel.png" alt=""
+                         class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Turismoi.html">
+                    <img src="../Contents/fotos/MENU_diego_arbulu.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Up_Peru.html">
+                    <img src="../Contents/fotos/MENU_amadeus_malca.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Vecinos360.html">
+                    <img src="../Contents/fotos/MENU_gonzalo_rossello.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Yaqua.html">
+                    <img src="../Contents/fotos/MENU_fernando_tamayo.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/Yunta.html">
+                    <img src="../Contents/fotos/MENU_jose_carrera.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="acelerados/zenQbar.html">
+                    <img src="../Contents/fotos/MENI_santiago_sologuren.png" alt="" class="img-responsive center-block">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 </body>

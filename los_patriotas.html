@@ -8,6 +8,12 @@
 
 	<link rel="stylesheet" type="text/css"
    		 href="https://fonts.googleapis.com/css?family=Nunito:bold,light,regular">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="Stylesheets/Shared.css">
 	<link rel="stylesheet" type="text/css" href="Stylesheets/PatriotasMain.css">
 	<link rel="stylesheet" type="text/css" href="Stylesheets/sm-frame.css">
@@ -20,13 +26,69 @@
 	<script src="Scripts/BubbleShow.js"></script>
 	<script src="Scripts/Conections.js"></script>
 	<script src="Scripts/sphere-mouseenter.js"></script-->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+			crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
+<nav class="navbar navbar-default visible-xs">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="nuestra_historia.html"><img
+					src="Contents/logos&botones/Logo Ynnovadores PGN.png" class="center-img1"></a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Formamos<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="Formamos/incubadora.html">Incubadora</a></li>
+						<li><a href="Formamos/aceleradora.html">Aceleradora</a></li>
+						<li><a href="Formamos/asesorias.html">Asesorias</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+					   aria-expanded="false">Creamos<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="Creamos/laboratorio_corporativo.html">Lab Corporativo</a></li>
+						<li><a href="Creamos/laboratorio_patriota.html">Lab Patriota</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Los Patriotas</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="social"><a class="sm-icon" href="https://www.facebook.com/ynnovadoresperu/">
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>
+
+				</a></li>
+				<li class="social"><a class="sm-icon" href="https://twitter.com/Ynnovadores">
+					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+				</a></li>
+				<li class="social"><a class="sm-icon" href="https://vimeo.com/user31764736">
+					<i class="fa fa-vimeo-square" aria-hidden="true"></i>
+				</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
 		<!--Code for side menu-->
-		<iframe src=sidemenu.html id=sm-frame> </iframe>
+		<iframe class="hidden-xs" src=sidemenu.html id=sm-frame> </iframe>
 
 		<div class="patriotas-page" id="page-wrap">
 
@@ -38,14 +100,60 @@
 					<p class="txt">LOS PATRIOTAS es una asociación civil sin fines de lucro que busca impulsar el bien social. Está conformada por un equipo de profesionales de primer nivel que, a título personal, promueven la innovación y la cultura del emprendimiento mediante acciones de formación, comunicación y relacionamiento.</br></br>YNNOVADORES es su primer </br>aporte al país.</p>
 				</div>
 
-				<a href="los_patriotas/Figueroa_Nancy.html"><div id="nf" class="sphere"></div></a>
-				<a href="los_patriotas/Flores_Juan_Alberto.html"><div id="jaf" class="sphere"></div></a>
-				<a href="los_patriotas/Lanzara_Hernan.html"><div id="hl" class="sphere"></div></a>
-				<a href="los_patriotas/Manso_Natalia.html"><div id="nm" class="sphere"></div></a>
-				<a href="los_patriotas/Miro_Quesada_Silvia.html"><div id="smq" class="sphere"></div></a>
-				<a href="los_patriotas/Montoya_Juan.html"><div id="jm" class="sphere"></div></a>
-				<a href="los_patriotas/Tirado_Juan_Jose.html"><div id="jjt" class="sphere"></div></a>
-				<a href="los_patriotas/Torres_Fidel.html"><div id="ft" class="sphere"></div></a>
+				<div class="hidden-xs">
+					<a href="los_patriotas/Figueroa_Nancy.html"><div id="nf" class="sphere"></div></a>
+					<a href="los_patriotas/Flores_Juan_Alberto.html"><div id="jaf" class="sphere"></div></a>
+					<a href="los_patriotas/Lanzara_Hernan.html"><div id="hl" class="sphere"></div></a>
+					<a href="los_patriotas/Manso_Natalia.html"><div id="nm" class="sphere"></div></a>
+					<a href="los_patriotas/Miro_Quesada_Silvia.html"><div id="smq" class="sphere"></div></a>
+					<a href="los_patriotas/Montoya_Juan.html"><div id="jm" class="sphere"></div></a>
+					<a href="los_patriotas/Tirado_Juan_Jose.html"><div id="jjt" class="sphere"></div></a>
+					<a href="los_patriotas/Torres_Fidel.html"><div id="ft" class="sphere"></div></a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4">
+						<a href="los_patriotas/Figueroa_Nancy.html">
+							<img src="Contents/fotos/MENU_nancy_figueroa.png" alt="" class="img-responsive center-block">
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="los_patriotas/Flores_Juan_Alberto.html">
+							<img src="Contents/fotos/MENU_Juan_Flores.png" alt="" class="img-responsive center-block">
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="los_patriotas/Lanzara_Hernan.html">
+							<img src="Contents/fotos/MENU_Hernan_Lanzara.png" alt="" class="img-responsive center-block">
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="los_patriotas/Manso_Natalia.html">
+							<img src="Contents/fotos/MENU_Natalia_Manso.png" alt="" class="img-responsive center-block">
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="los_patriotas/Miro_Quesada_Silvia.html">
+							<img src="Contents/fotos/MENU_Silvia_Miro_Quesada.png" alt="" class="img-responsive center-block">
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="los_patriotas/Montoya_Juan.html">
+							<img src="Contents/fotos/MENU_Juan_Montoya.png" alt="" class="img-responsive center-block">
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="los_patriotas/Tirado_Juan_Jose.html">
+							<img src="Contents/fotos/MENU_Juan_Jose_Tirado.png" alt="" class="img-responsive center-block">
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a href="los_patriotas/Torres_Fidel.html">
+							<img src="Contents/fotos/MENU_Fidel_Torres.png" alt="" class="img-responsive center-block">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 </body>

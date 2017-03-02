@@ -213,3 +213,133 @@ a, a:visited {
 #vimeo-logo {
 	top: -10.6vh !important;
 }
+@media screen and (max-width: 765px) {
+    body{
+        font-size: 100%;
+    }
+    .center-img1 {
+        width: 100%;
+        max-width: 50px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        text-align: center;
+        color: #777;
+    }
+    .navbar{
+        margin:auto!important;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        text-align: center;
+    }
+    ul.nav.navbar-nav.navbar-right>li.social {
+        display: inline-block;
+    }
+    ul.nav.navbar-nav.navbar-right {
+        text-align: center;
+    }
+    .navbar-brand {
+        height: 100px!important;
+        padding: 9px 15px!important;
+    }
+    .navbar-toggle {
+        margin-top: 30px!important;
+    }
+
+    #page-wrap {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .formamos-before {
+        position: absolute;
+        top: 20px;
+    }
+    .background {
+        display: none;
+        position: absolute;
+        top: -35.9vh;
+        left: 8.6vw;
+    }
+    .bubble.formamos-before {
+        position: absolute;
+        top: 20px;
+        left: 19.3vw;
+    }
+    .creamos-before {
+        position: absolute;
+        top: 30vh;
+        left: auto;
+        right: 10vw;
+    }
+    .bubble.aceleradora {
+        position: absolute;
+        top: 14.5vh;
+        left: 30vw;
+    }
+    .bubble.asesorias {
+        position: absolute;
+        top: 14.5vh;
+        left: 30vw;
+    }
+    .incubadora {
+        position: absolute;
+        top: 14.5vh;
+        left: 30vw;
+    }
+    .description-corp {
+        overflow: hidden;
+        position: absolute;
+        left: 6vw;
+        top: 40.6vh;
+        width: 50vh;
+        height: 50vh;
+    }
+    .title-corp {
+        top: 10vw;
+        width: 100%;
+        font-size: 25px;
+    }
+    .st-corp {
+        top: 4vh;
+    }
+    .overflow-corp {
+        top: 4vh;
+    }
+    .description {
+        overflow: hidden;
+        position: absolute;
+        top: 45vh;
+        left: 6vw;
+        width: 50vh;
+        height: 50vh;
+        border-radius: 18%;
+    }
+    .title {
+        top: 15.5vw;
+        width: 100%;
+        font-size: 25px;
+    }
+    .st {
+        top: 7vh;
+    }
+    .overflow {
+        top: 6.5vh;
+    }
+    .overflow, .overflow-corp {
+        overflow: hidden;
+    }
+    .formamos-p {
+        position: relative;
+        top: 3vh;
+    }
+    .form-lvl-p {
+        position: relative;
+        top: 8vh;
+    }
+    .pad15{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+}

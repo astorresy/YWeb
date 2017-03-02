@@ -31,3 +31,11 @@ html, body {
   border-top-left-radius: 5vw 50%;
   border-bottom-left-radius: 5vw 50%;
 }
+@media screen and (max-width: 765px) {
+	#page-background {
+		position: relative;
+		top: auto;
+		height: 100%;
+
+	}
+}

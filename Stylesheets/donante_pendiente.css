@@ -22,3 +22,132 @@
 .story {
 	/*color: white;*/
 }
+
+@media screen and (max-width: 765px) {
+	body{
+		text-align: center;
+		font-size: 100%;
+		background-color: #000;
+	}
+	.center-img1 {
+		width: 100%;
+		max-width: 50px;
+	}
+	.navbar-default{
+		border-radius: 0;
+	}
+	.navbar-default .navbar-nav>li>a {
+		text-align: center;
+		color: #777;
+	}
+	.navbar{
+		margin:auto!important;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		text-align: center;
+	}
+	ul.nav.navbar-nav.navbar-right>li.social {
+		display: inline-block;
+	}
+	ul.nav.navbar-nav.navbar-right {
+		text-align: center;
+	}
+	.navbar-brand {
+		height: 100px!important;
+		padding: 9px 15px!important;
+	}
+	.navbar-toggle {
+		margin-top: 30px!important;
+	}
+
+	#page-wrap {
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+	#page-background {
+		background-size: cover;
+		height: 36vh;
+	}
+
+	#logo {
+		position: absolute;
+		top: 23vh;
+		left: 22vw;
+		-moz-border-radius: 20%;
+		-webkit-border-radius: 20%;
+		border-radius: 0;
+		border: solid 2px rgb(130, 130, 130);
+		background-color: white;
+		height: 13vh;
+		width: 30vh;
+		text-align: center;
+	}
+	.logo {
+		position: relative;
+		display: block;
+		margin: auto;
+		top: 3px;
+		left: 2%;
+		width: 70%;
+	}
+	.buttonvideo{
+		background: url(../Contents/logos&botones/boton_video_blanco.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 4.6vh;
+		width: 21.6vh;
+		border: none;
+		margin: 20px auto;
+	}
+	.formamos {
+		position: absolute;
+		top: 2.4vh;
+		left: 10.7vw;
+	}
+	.aceleradora {
+		position: absolute;
+		top: 4.74vh;
+		left: 14.4vw;
+	}
+	#info {
+		width: 100%;
+		height: 20vw;
+		position: absolute;
+		top: 25vw;
+		left: auto;
+	}
+	.story {
+		top: 24vh;
+	}
+	#info .story {
+		margin: auto 20px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		height: auto;
+	}
+	.contact {
+		position: relative;
+		top: 22vh;
+		left: auto;
+		margin: auto 20px;
+		font-size: 2.4vh;
+		font-weight: lighter;
+		color: white;
+	}
+	ul.facebook {
+		display: none;
+	}
+	.pad15{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.parrafo-story{
+		text-align: center;
+		color: rgb(23, 171, 180);
+		font-size: 19px;
+		margin: 5px auto 20px auto;
+	}
+
+}
