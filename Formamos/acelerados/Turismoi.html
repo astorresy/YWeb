@@ -21,11 +21,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -112,18 +114,20 @@
             <p class="parrafo-story visible-xs">“Estamos construyendo la mayor red de mercados digitales web y móviles que ofrecen tours y
                 actividades turísticas para dinamizar el turismo interno en Latinoamérica y España”.</p>
             <button class="buttonvideo visible-xs"></button>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>Turismoi es una red de catálogos online y soluciones en software para el segmento de tours, actividades y
-                paquetes. Conecta al operador local en los mercados de habla hispana con usuarios a través de “consumer
-                marketplaces” y conexiones API (interfaz de programación de aplicaciones) a redes de distribución y
-                colectivos de usuarios locales, regionales y globales. Es una nueva experiencia de usuario web/móvil en
-                la compra de actividades de aventura, culturales, familiares, etc.</p>
-            <p>Turismoi se enfoca en darle soluciones comerciales a los tour operadores en los países de habla hispana.
-                El operador local sube su producto turístico a la plataforma (contenido, fotos, precios, etc.), el
-                equipo de edición de Turismoi “cura” ese contenido y lo distribuye en redes de marketplaces enfocadas al
-                usuario final, como http://turismoi.pe (Perú), http://turismoi.es/ (España) y http://turismoi.co/
-                (Colombia). Así, está generando valor a los proveedores turísticos y creando una comunidad de viajeros
-                activos.</p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>Turismoi es una red de catálogos online y soluciones en software para el segmento de tours, actividades y
+                    paquetes. Conecta al operador local en los mercados de habla hispana con usuarios a través de “consumer
+                    marketplaces” y conexiones API (interfaz de programación de aplicaciones) a redes de distribución y
+                    colectivos de usuarios locales, regionales y globales. Es una nueva experiencia de usuario web/móvil en
+                    la compra de actividades de aventura, culturales, familiares, etc.</p>
+                <p>Turismoi se enfoca en darle soluciones comerciales a los tour operadores en los países de habla hispana.
+                    El operador local sube su producto turístico a la plataforma (contenido, fotos, precios, etc.), el
+                    equipo de edición de Turismoi “cura” ese contenido y lo distribuye en redes de marketplaces enfocadas al
+                    usuario final, como http://turismoi.pe (Perú), http://turismoi.es/ (España) y http://turismoi.co/
+                    (Colombia). Así, está generando valor a los proveedores turísticos y creando una comunidad de viajeros
+                    activos.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -238,4 +242,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function ($) {
+        $(window).on("load", function () {
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

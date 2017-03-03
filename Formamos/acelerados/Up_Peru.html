@@ -21,11 +21,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -110,6 +112,7 @@
         <div class="story">
             <p class="parrafo-story visible-xs">“Lo que originalmente era el proyecto UpPerú, ahora es la rama educativa de Ynnovadores”.</p>
             <button class="buttonvideo visible-xs"></button>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
             <p class="intro">¿En qué consiste el proyecto?</p>
             <p>Basado en sus experiencias y las de sus congéneres en Silicon Valley, Amadeus Malca creó UpPerú como un
                 curso kit básico de conocimientos que todo emprendedor de startups debería saber. Consiste en una
@@ -125,6 +128,7 @@
                 más de tres millones y medio de usuarios alrededor del mundo. La segunda, una red social para
                 estudiantes que les permite estudiar en grupo a pesar del lugar y la hora, está en más de 100 ciudades
                 universitarias de Estados Unidos.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -232,4 +236,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

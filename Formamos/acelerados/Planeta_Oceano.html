@@ -20,11 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -111,6 +113,7 @@
             <p class="parrafo-story visible-xs">“En los próximos diez años nos gustaría expandir nuestro trabajo a lo largo de toda la costa
                 peruana, para luego escalar nuestro modelo a nivel internacional”. </p>
             <button class="buttonvideo visible-xs"></button>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
             <p class="intro">¿En qué consiste el proyecto?</p>
             <p>Planeta Océano es una organización sin fines de lucro que empodera a comunidades costeras del Perú para
                 que conserven sus ambientes y sus recursos marino-costeros. En alianza con el sector privado, la
@@ -125,6 +128,7 @@
                 amenazadas, han formado la Red de Educadores Marino-costeros del Perú conformada por más de 50 colegios
                 y cientos de docentes que está aumentando la sensibilización marina, y han empoderado a más de 20
                 emprendimientos comunitarios que buscan conservar los ambientes marinos en su localidad. </p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -235,4 +239,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

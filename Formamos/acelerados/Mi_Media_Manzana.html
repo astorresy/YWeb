@@ -20,11 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -111,17 +113,19 @@
             <p class="parrafo-story visible-xs">“Mi Media Manzana es la primera startup peruana en haber sido seleccionada para un programa de
                 aceleración en Silicon Valley (BlackBox Connect) y en haber sido elegida como emprendedora ENDEAVOR”.</p>
             <button class="buttonvideo visible-xs"></button>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>Mi Media Manzana es la primera plataforma de dating online en Latinoamérica enfocada en la generación de
-                relaciones de largo plazo. Su misión es “convertir personas solteras en parejas felices”.</p>
-            <p>Cuenta con un modelo de negocio freemium, donde todos los usuarios pueden registrarse gratuitamente y
-                utilizar la plataforma (web o APP). Quienes quieran tener acceso a características premium e incrementar
-                la velocidad y probabilidad de encontrar pareja, pagan una suscripción que va de mensual a
-                semestral.</p>
-            <p>Mi Media Manzana está dirigida a personas "no casadas" (solteros, separados, divorciados, etc.) de entre
-                30 y 55 años de edad que buscan una relación seria y duradera. Cuenta con más de 1.5 millones de visitas
-                mensuales y tiene más de un millón de usuarios registrados en Colombia, Perú, México y Chile. Cientos de
-                parejas que se conocieron a través de Mi Media Manzana son hoy felices matrimonios.</p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>Mi Media Manzana es la primera plataforma de dating online en Latinoamérica enfocada en la generación de
+                    relaciones de largo plazo. Su misión es “convertir personas solteras en parejas felices”.</p>
+                <p>Cuenta con un modelo de negocio freemium, donde todos los usuarios pueden registrarse gratuitamente y
+                    utilizar la plataforma (web o APP). Quienes quieran tener acceso a características premium e incrementar
+                    la velocidad y probabilidad de encontrar pareja, pagan una suscripción que va de mensual a
+                    semestral.</p>
+                <p>Mi Media Manzana está dirigida a personas "no casadas" (solteros, separados, divorciados, etc.) de entre
+                    30 y 55 años de edad que buscan una relación seria y duradera. Cuenta con más de 1.5 millones de visitas
+                    mensuales y tiene más de un millón de usuarios registrados en Colombia, Perú, México y Chile. Cientos de
+                    parejas que se conocieron a través de Mi Media Manzana son hoy felices matrimonios.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -237,4 +241,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

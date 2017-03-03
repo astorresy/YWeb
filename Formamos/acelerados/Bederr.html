@@ -20,11 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -102,26 +104,34 @@
 
     <div id="logo">
         <img src="../../Contents/logos&botones/perfil_logo_mario_gil.png" class="logo">
-        <p class="quote hidden-xs">“Agrupamos tus cupones de beneficios en una aplicación móvil para que realmente puedas usarlo
+        <p class="quote hidden-xs">“Agrupamos tus cupones de beneficios en una aplicación móvil para que realmente
+            puedas usarlo
             en tiempo real y de manera geolocalizada”.</p>
     </div>
 
     <div id="info">
         <button class="video hidden-xs"></button>
         <div class="story">
-            <p class="parrafo-story visible-xs">“Agrupamos tus cupones de beneficios en una aplicación móvil para que realmente puedas usarlo
+            <p class="parrafo-story visible-xs">“Agrupamos tus cupones de beneficios en una aplicación móvil para que
+                realmente puedas usarlo
                 en tiempo real y de manera geolocalizada”.</p>
             <button class="buttonvideo visible-xs"></button>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>Bederr es una aplicación para IOS, Android y web que agrupa beneficios corporativos y locales de forma
-                geolocalizada y permite a sus usuarios disfrutar de ellos en cualquier momento y <br/> de manera
-                sencilla.</p>
-            <p>Para las empresas, es un market place de contenidos de beneficios corporativos flexibles en tiempo real,
-                donde pueden interactuar y crear programas de lealtad dinámicos, así como oportunidades de negocios con
-                otras firmas. Para los usuarios, es totalmente gratis.</p>
-            <p>El modelo de negocio de Bederr está, por un lado, en la gestión de beneficios flexibles mediante una
-                suscripción mensual. Por el lado de los dueños de los contenidos, es un costo por lead de los contenidos
-                que estén en los programas de beneficios.</p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>Bederr es una aplicación para IOS, Android y web que agrupa beneficios corporativos y locales de
+                    forma
+                    geolocalizada y permite a sus usuarios disfrutar de ellos en cualquier momento y <br/> de manera
+                    sencilla.</p>
+                <p>Para las empresas, es un market place de contenidos de beneficios corporativos flexibles en tiempo
+                    real,
+                    donde pueden interactuar y crear programas de lealtad dinámicos, así como oportunidades de negocios
+                    con
+                    otras firmas. Para los usuarios, es totalmente gratis.</p>
+                <p>El modelo de negocio de Bederr está, por un lado, en la gestión de beneficios flexibles mediante una
+                    suscripción mensual. Por el lado de los dueños de los contenidos, es un costo por lead de los
+                    contenidos
+                    que estén en los programas de beneficios.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -232,4 +242,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

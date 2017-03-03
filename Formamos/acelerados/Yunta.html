@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../Scripts/Acelerados.js"></script>
@@ -28,6 +29,7 @@
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
     <script src="../../Scripts/Patriotas.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -113,28 +115,30 @@
             <p class="parrafo-story visible-xs">“Necesitamos rediseñar el modelo de negocio de la asociación civil mediante un trabajo
                 colaborativo con expertos de Ynnovadores, así como contar con socios estratégicos que permitan expandir el
                 proyecto”.</p>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>Yunta es una organización sin fines de lucro ubicada en Lima y Arequipa que brinda un programa de
-                mentoring grupal enfocado en el desarrollo emocional de los niños y jóvenes en situación de
-                vulnerabilidad: fortalecimiento de autoestima, desarrollo de habilidades sociales y sentido de
-                posibilidad.</p>
-            <p>Su asociación con Youth Mentoring Connection les permite tener un respaldo de esta metodología de
-                mentoring, que con más de diez años de vigencia ha logrado que los aprendices involucrados en el
-                programa aumenten su autoestima, incrementen la asistencia a la escuela, obtengan mejores
-                calificaciones, desarrollen un mayor interés y potencial para asistir a la universidad, y mejoren la
-                relación con sus padres y otras figuras de autoridad.</p>
-            <p>En 2014, Yunta fue una de las veinte finalistas a nivel nacional del concurso “Protagonistas del Cambio”
-                de la UPC – Youth Action Net (2014). También fue seleccionada en la convocatoria "Innovation for
-                Humanity" por la Johns Hopkins University (Estados Unidos) y Centrum Escuela de Negocios PUCP (Perú), lo
-                que les permitió recibir la asesoría de consultores-alumnos del MBA Global del Johns Hopkins - Carey
-                Business School entre setiembre de 2014 y enero de 2015.</p>
-            <p>Para los próximos cinco años, se proyecta como un programa de mentoring acreditado por una institución
-                con reconocimiento internacional y que tenga impacto en por lo menos cinco ciudades del país. Y a largo
-                plazo (20 años), se visualiza como el programa de mentoring más importante de país, para que estudiantes
-                de colegios públicos se sientan acompañados emocionalmente, dado el déficit de psicólogos en dichas
-                escuelas. Para Yunta, la formación socioemocional, y principalmente el fortalecimiento de la autoestima
-                de los niños y jóvenes, debe ser una política pública que sea transversal a todos los sectores del
-                Estado.</p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>Yunta es una organización sin fines de lucro ubicada en Lima y Arequipa que brinda un programa de
+                    mentoring grupal enfocado en el desarrollo emocional de los niños y jóvenes en situación de
+                    vulnerabilidad: fortalecimiento de autoestima, desarrollo de habilidades sociales y sentido de
+                    posibilidad.</p>
+                <p>Su asociación con Youth Mentoring Connection les permite tener un respaldo de esta metodología de
+                    mentoring, que con más de diez años de vigencia ha logrado que los aprendices involucrados en el
+                    programa aumenten su autoestima, incrementen la asistencia a la escuela, obtengan mejores
+                    calificaciones, desarrollen un mayor interés y potencial para asistir a la universidad, y mejoren la
+                    relación con sus padres y otras figuras de autoridad.</p>
+                <p>En 2014, Yunta fue una de las veinte finalistas a nivel nacional del concurso “Protagonistas del Cambio”
+                    de la UPC – Youth Action Net (2014). También fue seleccionada en la convocatoria "Innovation for
+                    Humanity" por la Johns Hopkins University (Estados Unidos) y Centrum Escuela de Negocios PUCP (Perú), lo
+                    que les permitió recibir la asesoría de consultores-alumnos del MBA Global del Johns Hopkins - Carey
+                    Business School entre setiembre de 2014 y enero de 2015.</p>
+                <p>Para los próximos cinco años, se proyecta como un programa de mentoring acreditado por una institución
+                    con reconocimiento internacional y que tenga impacto en por lo menos cinco ciudades del país. Y a largo
+                    plazo (20 años), se visualiza como el programa de mentoring más importante de país, para que estudiantes
+                    de colegios públicos se sientan acompañados emocionalmente, dado el déficit de psicólogos en dichas
+                    escuelas. Para Yunta, la formación socioemocional, y principalmente el fortalecimiento de la autoestima
+                    de los niños y jóvenes, debe ser una política pública que sea transversal a todos los sectores del
+                    Estado.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -242,4 +246,11 @@
         <div id="zenQbar" class="nav"></div>
     </a>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

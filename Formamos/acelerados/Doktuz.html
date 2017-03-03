@@ -20,11 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -112,6 +114,7 @@
             <p class="parrafo-story visible-xs">“Si el usuario de Doktuz resuelve su problema cuando nos busca; si encuentra al médico que
                 necesitaba o la información que no encontraba en ningún lado, nuestro objetivo está cumplido”.</p>
             <button class="buttonvideo visible-xs"></button>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
             <p class="intro">¿En qué consiste el proyecto?</p>
             <p>Doktuz es una plataforma de salud que combina comunicación segura con la búsqueda de médicos de confianza
                 y de información de salud de alta evidencia científica. Se dirige a todas las personas que buscan
@@ -123,6 +126,7 @@
                 y más de 100 entidades han creado sus perfiles institucionales en la plataforma, entre las que están las
                 más importantes del país, como la red Sanna, Aliada, Oncosalud, Auna, Clínica San Felipe, Stella Maris,
                 Laboratorios Blufstein y Mapfre.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -243,4 +247,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

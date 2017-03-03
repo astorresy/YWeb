@@ -21,11 +21,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -112,17 +114,20 @@
             <p class="parrafo-story visible-xs">“Yaqua es el sentido de lo que queremos lograr como peruanos. Es ese inicio de revolución del
                 consumo masivo solidario que se está dando naturalmente en nuestro país y en nuestra sociedad”.</p>
             <button class="buttonvideo visible-xs"></button>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>YAQUA busca transformar el consumo de agua embotellada en una corriente de cambio y solidaridad. La venta
-                de cada botella de agua permite que una persona en condiciones de pobreza extrema tenga ocho días de
-                agua limpia.</p>
-            <p>YAQUA destina el 100% de sus dividendos a construir proyectos de agua limpia en las zonas más pobres del
-                país. Esto en alianza con socios estratégicos como organizaciones no gubernamentales especializadas en
-                formular e implementar proyectos de agua y saneamiento. YAQUA provee el financiamiento y ellas
-                desarrollan el trabajo de campo. Se reciben reportes mensuales, junto con fotos y videos para probar que
-                el proyecto fue realizado.</p>
-            <p>Al generar una tendencia de consumo masivo solidario, convierte a los consumidores en agentes de cambio
-                activos.</p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>YAQUA busca transformar el consumo de agua embotellada en una corriente de cambio y solidaridad. La venta
+                    de cada botella de agua permite que una persona en condiciones de pobreza extrema tenga ocho días de
+                    agua limpia.</p>
+                <p>YAQUA destina el 100% de sus dividendos a construir proyectos de agua limpia en las zonas más pobres del
+                    país. Esto en alianza con socios estratégicos como organizaciones no gubernamentales especializadas en
+                    formular e implementar proyectos de agua y saneamiento. YAQUA provee el financiamiento y ellas
+                    desarrollan el trabajo de campo. Se reciben reportes mensuales, junto con fotos y videos para probar que
+                    el proyecto fue realizado.</p>
+                <p>Al generar una tendencia de consumo masivo solidario, convierte a los consumidores en agentes de cambio
+                    activos.</p>
+            </div>
+
         </div>
         <section class="contact">
             <!--Name-->
@@ -236,4 +241,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function ($) {
+        $(window).on("load", function () {
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

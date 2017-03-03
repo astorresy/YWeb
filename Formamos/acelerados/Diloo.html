@@ -20,11 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -111,6 +113,7 @@
             <p class="parrafo-story visible-xs">“Diloo es una aplicación móvil que te permitirá comunicarte con muchas empresas de manera
                 instantánea y desde un solo lugar, sin necesidad de gastar tiempo, dinero y paciencia”.</p>
             <button class="buttonvideo visible-xs"></button>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
 
             <p class="intro">¿En qué consiste el proyecto?</p>
             <p>Diloo es una empresa que da servicio de comunicación masiva personalizada móvil. Utiliza las herramientas
@@ -125,6 +128,8 @@
             <p>Su mercado objetivo son empresas que buscan una manera sencilla y eficiente de comunicarse con sus
                 clientes o potenciales clientes para realizar desde envío de notificaciones de cobranzas, hasta todo el
                 proceso de venta online.</p>
+
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -235,4 +240,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

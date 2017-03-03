@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../Scripts/Acelerados.js"></script>
@@ -27,6 +28,7 @@
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
     <script src="../../Scripts/Patriotas.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -113,21 +115,23 @@
             <p class="parrafo-story visible-xs">“Para lograr una masa crítica de clientes debemos establecer estrategias agresivas de marketing
                 y comunicación, así como incrementar nuestro networking, capacitación para la exportación y capital de
                 trabajo”</p>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>Infusión ofrece bebidas totalmente naturales elaboradas con hierbas, granos orgánicos seleccionados y
-                plantas medicinales: cola de caballo, boldo, muña,
-                cedrón, manzanilla, toronjil, menta, linaza y cebada. Son productos inspirados en el clásico emoliente y
-                las bebidas de carretilla. Todos sus insumos provienen de la sierra y selva del país y la producción la
-                realizan en Lima. Es una bebida “del campo a la botella” que conserva su esencia y propiedades naturales
-                sin el uso de preservantes. Cuenta con tres sabores elaborados sobre la base de hierbas y frutas
-                (maracuyá, camu camu y piña), endulzados principalmente con panela y stevia orgánica.</p>
-            <p>Finalmente, el empleo de botellas de vidrio contribuye a mantener las propiedades de sabor y de frescura
-                de sus bebidas y cuida el medioambiente.</p>
-            <p>Su modelo de negocio es la comercialización B2B (Business to Business) y B2C (Business to Consumer). En
-                el primero, venden en más de 75 tiendas especializadas de productos naturales en Lima, así como en
-                estaciones de servicio de los grifos de la cadena Repsol, tres grifos de bandera blanca y en
-                supermercados Tottus. En cuanto al modelo B2C, interactúan con el consumidor final a través de las
-                ecoferias dominicales y reciben pedidos vía telefónica y Facebook. </p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>Infusión ofrece bebidas totalmente naturales elaboradas con hierbas, granos orgánicos seleccionados y
+                    plantas medicinales: cola de caballo, boldo, muña,
+                    cedrón, manzanilla, toronjil, menta, linaza y cebada. Son productos inspirados en el clásico emoliente y
+                    las bebidas de carretilla. Todos sus insumos provienen de la sierra y selva del país y la producción la
+                    realizan en Lima. Es una bebida “del campo a la botella” que conserva su esencia y propiedades naturales
+                    sin el uso de preservantes. Cuenta con tres sabores elaborados sobre la base de hierbas y frutas
+                    (maracuyá, camu camu y piña), endulzados principalmente con panela y stevia orgánica.</p>
+                <p>Finalmente, el empleo de botellas de vidrio contribuye a mantener las propiedades de sabor y de frescura
+                    de sus bebidas y cuida el medioambiente.</p>
+                <p>Su modelo de negocio es la comercialización B2B (Business to Business) y B2C (Business to Consumer). En
+                    el primero, venden en más de 75 tiendas especializadas de productos naturales en Lima, así como en
+                    estaciones de servicio de los grifos de la cadena Repsol, tres grifos de bandera blanca y en
+                    supermercados Tottus. En cuanto al modelo B2C, interactúan con el consumidor final a través de las
+                    ecoferias dominicales y reciben pedidos vía telefónica y Facebook. </p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -234,5 +238,11 @@
         <div id="zenQbar" class="nav"></div>
     </a>
 </div>
-
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

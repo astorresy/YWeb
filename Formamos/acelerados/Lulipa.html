@@ -20,11 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    D
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -111,6 +113,7 @@
             <p class="parrafo-story visible-xs">“Somos una marca para mujeres que quieran sentirse seguras por dentro, pero expresarlo también
                 por fuera. Queremos que todas las mujeres se sientan empoderadas usando Lulipa”.</p>
             <button class="buttonvideo visible-xs"></button>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
             <p class="intro">¿En qué consiste el proyecto?</p>
             <p>Lulipa es una marca de lencería fina que tiene como objetivo dar una experiencia de compra positiva a las
                 clientas que visitan sus tiendas, con un aroma propio de la marca, música y atención personalizada. Su
@@ -122,6 +125,7 @@
                 logran un conjunto completo, hilos, boxers y bikinis para el gusto de cada clienta. Su visión es ser la
                 lovemark de lingerie en Latinoamérica. Para ello, busca vender su franquicia a inversionistas en Perú,
                 Chile, Panamá, Ecuador y Bolivia. </p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -232,4 +236,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

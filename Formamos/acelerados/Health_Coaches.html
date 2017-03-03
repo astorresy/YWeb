@@ -20,11 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -110,16 +112,18 @@
             <p class="parrafo-story visible-xs">“Nuestro principal objetivo es ayudarte a mantener el equilibrio interno a pesar de que todo a
                 tu alrededor pueda ser completamente caótico.”</p>
             <button class="buttonvideo visible-xs"></button>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>El estrés puede afectar no solo la salud física, mental y emocional de las personas, sino también su
-                desempeño laboral. Es un problema de salud pública a nivel mundial que debe ser abordado de manera
-                oportuna. Health Coaches nace para mejorar la calidad de vida de las personas. Al enseñarles una serie
-                de herramientas avaladas científicamente, ayuda a restaurar su equilibrio mental y emocional. </p>
-            <p>Tiene dos líneas de negocio: la corporativa y la personal. En la primera, ofrece talleres y consultorías
-                sobre manejo de estrés y vida sana según las necesidades de la empresa y del público específico. En la
-                segunda, elabora un plan integral y personalizado con un equipo de profesionales en nutrición, deporte y
-                manejo del estrés. Su mercado objetivo son las áreas de Recursos Humanos y Bienestar, y el público
-                adulto en general.</p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>El estrés puede afectar no solo la salud física, mental y emocional de las personas, sino también su
+                    desempeño laboral. Es un problema de salud pública a nivel mundial que debe ser abordado de manera
+                    oportuna. Health Coaches nace para mejorar la calidad de vida de las personas. Al enseñarles una serie
+                    de herramientas avaladas científicamente, ayuda a restaurar su equilibrio mental y emocional. </p>
+                <p>Tiene dos líneas de negocio: la corporativa y la personal. En la primera, ofrece talleres y consultorías
+                    sobre manejo de estrés y vida sana según las necesidades de la empresa y del público específico. En la
+                    segunda, elabora un plan integral y personalizado con un equipo de profesionales en nutrición, deporte y
+                    manejo del estrés. Su mercado objetivo son las áreas de Recursos Humanos y Bienestar, y el público
+                    adulto en general.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -229,4 +233,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

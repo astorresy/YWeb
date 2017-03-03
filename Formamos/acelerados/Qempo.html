@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="../../Scripts/Acelerados.js"></script>
@@ -27,6 +28,7 @@
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
     <script src="../../Scripts/Patriotas.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -115,17 +117,19 @@
                 emprendedores como los tienen en Ynnovadores, para poder aprender de ellos y seguir creciendo. Al tener
                 exposición en el ecosistema peruano, podremos dar a conocer al mundo entero el talento que tenemos”.</p>
             <button class="buttonvideo visible-xs"></button>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>Qempo facilita a clientes de todo el Perú la compra en línea de productos del exterior, específicamente
-                de Estados Unidos. El cliente busca el producto que desea adquirir, de la tienda que prefiera, envía el
-                enlace a Qempo y ellos le brindan la cotización total hasta la entrega en su dirección en Perú. Este
-                costo total incluye todo el proceso de compra, la recepción en Estados Unidos, el envío al Perú, el
-                proceso de nacionalización y, finalmente, la entrega en la dirección del cliente en cualquier ciudad del
-                país.</p>
-            <p>Qempo genera ingresos con un activo pasivo: los espacios libres en las maletas de los viajeros. Trabaja
-                con ellos como canales de logística internacional, compartiendo y optimizando la capacidad disponible en
-                sus equipajes para importar los productos que los clientes solicitan en el Perú. Su comisión es del 20%
-                de las ventas totales.</p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>Qempo facilita a clientes de todo el Perú la compra en línea de productos del exterior, específicamente
+                    de Estados Unidos. El cliente busca el producto que desea adquirir, de la tienda que prefiera, envía el
+                    enlace a Qempo y ellos le brindan la cotización total hasta la entrega en su dirección en Perú. Este
+                    costo total incluye todo el proceso de compra, la recepción en Estados Unidos, el envío al Perú, el
+                    proceso de nacionalización y, finalmente, la entrega en la dirección del cliente en cualquier ciudad del
+                    país.</p>
+                <p>Qempo genera ingresos con un activo pasivo: los espacios libres en las maletas de los viajeros. Trabaja
+                    con ellos como canales de logística internacional, compartiendo y optimizando la capacidad disponible en
+                    sus equipajes para importar los productos que los clientes solicitan en el Perú. Su comisión es del 20%
+                    de las ventas totales.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -229,5 +233,11 @@
         <div id="zenQbar" class="nav"></div>
     </a>
 </div>
-
+<script>
+    (function ($) {
+        $(window).on("load", function () {
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>

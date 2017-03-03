@@ -20,11 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/sm-frame.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/style-ie.css"/>
     <link rel="stylesheet" type="text/css" href="../../Stylesheets/Ac-nav.css"/>
+    <link rel="stylesheet" href="../../Stylesheets/jquery.mCustomScrollbar.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../../Scripts/Acelerados.js"></script>
     <script src="../../Scripts/Sidemenu.js"></script>
     <script src="../../Scripts/NavigationAs.js"></script>
+    <script src="../../Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -111,17 +113,19 @@
             <p class="parrafo-story visible-xs">“El coaching asistido con caballos es una alternativa potente y eficaz para el desarrollo
                 transformador en las <br>habilidades de los colaboradores <br>de una empresa”.</p>
             <button class="buttonvideo visible-xs"></button>
-            <p class="intro">¿En qué consiste el proyecto?</p>
-            <p>Equus Corporation es la primera firma peruana dedicada a brindar una gama de servicios relacionados al
-                mundo ecuestre, tales como importación y exportación de caballos, asesoría y formación en crianza de
-                caballos bajo el concepto de bienestar animal, venta técnica de ejemplares, equipos y alimento
-                balanceado, y coaching asistido con caballos para personas y empresas. Este último tiene como público
-                objetivo a personas que desean iniciar o profundizar su autoconocimiento, descubrir sus propios recursos
-                y gestionarlos para alcanzar sus objetivos en el plano personal, familiar, de pareja y laboral, de una
-                manera rápida, impactante y transformacional. Con el servicio de coaching organizacional asistido con
-                caballos tiene como mercado objetivo a aquellas empresas que creen en su capital humano y desean
-                desarrollar todo su potencial hacia el liderazgo, la motivación, la comunicación asertiva, el trabajo y
-                la cohesión de equipos, el logro de metas y desafíos.</p>
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <p class="intro">¿En qué consiste el proyecto?</p>
+                <p>Equus Corporation es la primera firma peruana dedicada a brindar una gama de servicios relacionados al
+                    mundo ecuestre, tales como importación y exportación de caballos, asesoría y formación en crianza de
+                    caballos bajo el concepto de bienestar animal, venta técnica de ejemplares, equipos y alimento
+                    balanceado, y coaching asistido con caballos para personas y empresas. Este último tiene como público
+                    objetivo a personas que desean iniciar o profundizar su autoconocimiento, descubrir sus propios recursos
+                    y gestionarlos para alcanzar sus objetivos en el plano personal, familiar, de pareja y laboral, de una
+                    manera rápida, impactante y transformacional. Con el servicio de coaching organizacional asistido con
+                    caballos tiene como mercado objetivo a aquellas empresas que creen en su capital humano y desean
+                    desarrollar todo su potencial hacia el liderazgo, la motivación, la comunicación asertiva, el trabajo y
+                    la cohesión de equipos, el logro de metas y desafíos.</p>
+            </div>
         </div>
         <section class="contact">
             <!--Name-->
@@ -233,4 +237,11 @@
                 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 </div>
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </body>
