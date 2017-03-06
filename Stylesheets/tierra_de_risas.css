@@ -1,7 +1,8 @@
 #page-background {
 	background: url(../Contents/fotos/INCUBADORA_tatiana_feijoo.png);
 	background-position: 0 50%;
-  background-size: auto 100%;
+	/*background-size: auto 100%;*/
+	background-size: cover;
 }
 
 #logo {

@@ -41,7 +41,8 @@ a, a:visited {
 #page-background {
     background: url(../Contents/fotos/LAB_CORP_BBVA.png);
     background-position: 0 50%;
-    background-size: auto 100%;
+    /*background-size: auto 100%;*/
+    background-size: cover;
 }
 
 .bubble {
