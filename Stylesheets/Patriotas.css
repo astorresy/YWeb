@@ -151,3 +151,114 @@ a:visited {
 #vimeo-logo {
 	top: -10.6vh !important;
 }
+
+@media screen and (max-width: 765px) {
+	body{
+		text-align: center;
+		font-size: 100%;
+		background-color: #000;
+	}
+	.center-img1 {
+		width: 100%;
+		max-width: 50px;
+	}
+	.navbar{
+		border-radius: 0;
+		margin:auto!important;
+	}
+	.navbar-default .navbar-nav>li>a {
+		text-align: center;
+		color: #777;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		text-align: center;
+	}
+	ul.nav.navbar-nav.navbar-right>li.social {
+		display: inline-block;
+	}
+	ul.nav.navbar-nav.navbar-right {
+		text-align: center;
+	}
+	.navbar-brand {
+		height: 100px!important;
+		padding: 9px 15px!important;
+	}
+	.navbar-toggle {
+		margin-top: 30px!important;
+	}
+
+	#page-wrap {
+
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+	#inside {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: auto;
+		width: 100%;
+	}
+	#patriotas-logo {
+		position: relative;
+		display: block;
+		top: 5vh;
+		left: 0;
+		width: 100%;
+		max-width: 80%;
+		margin: auto;
+	}
+	.description {
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: auto;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		border: solid 0 #6d6e70;
+	}
+	#page-background {
+		position: relative;
+		top: auto;
+		background-size: cover;
+		height: 36vh;
+		max-height: 75%!important;
+	}
+	.patriotas-page .col-xs-4 img{
+		padding-bottom: 10px;
+	}
+	#info {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		font-size: 2.2vh;
+		font-weight: lighter;
+		color: white;
+	}
+	p.quote-xs.visible-xs {
+		margin: 25px 12px auto 12px;
+		font-weight: normal;
+		color: rgb(23, 171, 180);
+		font-size: 3vh;
+		line-height: 2.7vh;
+	}
+	#namecard {
+		top: 3vh;
+	}
+	.story {
+		position: relative;
+		overflow: visible;
+		top: 4vh;
+		margin: auto 12px;
+	}
+	.patriotas-before {
+		position: absolute;
+		top: 10.74vh;
+		left: 10.4vw;}
+}

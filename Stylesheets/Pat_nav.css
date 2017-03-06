@@ -85,3 +85,15 @@
 	background-color: white
 
 }
+@media screen and (max-width: 765px) {
+	.nav {
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		background-size: cover;
+		height: auto;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+}

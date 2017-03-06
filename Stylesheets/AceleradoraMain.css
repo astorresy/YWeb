@@ -125,6 +125,7 @@ a, a:visited {
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	border: solid 0.5vh #6d6e70;
+	z-index: 9;
 }
 
 .title {
@@ -556,4 +557,161 @@ a, a:visited {
 
 #vimeo-logo {
 	top: -10.6vh !important;
+}
+@media screen and (max-width: 765px) {
+	body{
+		font-size: 100%;
+	}
+	.center-img1 {
+		width: 100%;
+		max-width: 50px;
+	}
+	.navbar-default .navbar-nav>li>a {
+		text-align: center;
+		color: #777;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		text-align: center;
+	}
+	ul.nav.navbar-nav.navbar-right>li.social {
+		display: inline-block;
+	}
+	ul.nav.navbar-nav.navbar-right {
+		text-align: center;
+	}
+	.navbar-brand {
+		height: 100px!important;
+		padding: 9px 15px!important;
+	}
+	.navbar-toggle {
+		margin-top: 30px!important;
+	}
+	.navbar {
+		margin: auto!important;
+	}
+	.incubadora-container {
+		position: absolute;
+		top: 80vh;
+		left: 13vw;
+		right: 77vw;
+	}
+	.center-img {
+		width: 100%;
+		max-width: 80px;
+	}
+	.center {
+		position: absolute;
+		top: 19.6vh;
+		left: 40vw;
+		right: 40vw;
+		z-index: 1;
+	}
+	#page-wrap {
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.background {
+		position: absolute;
+		top: -35.9vh;
+		left: 8.6vw;
+		display: none;
+	}
+	.bubble.formamos-before {
+		position: absolute;
+		top: 20px;
+	}
+	.creamos-before {
+		position: absolute;
+		top: 30vh;
+		left: auto;
+		right: 10vw;
+	}
+	.bubble.aceleradora {
+		position: absolute;
+		top: 14.5vh;
+		left: 30vw;
+	}
+	/*.description {
+		background: #f1f2f2;
+		overflow: hidden;
+		position: absolute;
+		display: block;
+		margin: auto;
+		right: 0;
+		left: 0;
+		top: 42vh;
+		width: 55vh;
+		height: 55vh;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		border: solid 0.5vh #6d6e70;
+	}*/
+	.description {
+		background: #f1f2f2;
+		overflow: hidden;
+		position: absolute;
+		display: block;
+		margin: auto;
+		right: 0;
+		left: 0;
+		top: 42.3vh;
+		width: 50vh;
+		height: 50vh;
+		-moz-border-radius: 18%;
+		-webkit-border-radius: 18%;
+		border-radius: 18%;
+		border: solid 0.5vh #6d6e70;
+	}
+	.overflow {
+		position: relative;
+		height: 37vh;
+		width: 85%;
+		left: 7.5%;
+		top: 8vh;
+		overflow: hidden;
+	}
+	.st {
+		position: relative;
+		left: 10%;
+		top: 8vh;
+		width: 80%;
+		font-weight: bold;
+		font-style: italic;
+		font-size: 2.8vh;
+		line-height: 3.5vh;
+	}
+	.txt {
+		font-weight: lighter;
+		font-size: 2.6vh;
+		line-height: 2.6vh;
+	}
+	.bubble-constellation {
+		display: none;
+		position: absolute;
+		left: 18vw;
+	}
+	.sphere {
+		position: initial!important;
+		display: block;
+		margin: auto;
+	}
+	.Constellation img {
+		margin-bottom: 15px;
+		width: 100%;
+		height: auto;
+		border-radius: 60%;
+		border: 1px solid #6d6e70;
+	}
+	.formamos-p {
+		position: relative;
+		top: 3vh;
+	}
+	.form-lvl-p {
+		position: relative;
+		top: 8vh;
+	}
+
 }

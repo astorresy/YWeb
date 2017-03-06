@@ -46,3 +46,15 @@
 	background: url(../Contents/logos&botones/MENU_logo_tatiana_feijoo.png);
 	background-size: 100% 100%;
 }
+@media screen and (max-width: 765px) {
+	.nav {
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		background-size:cover;
+		height:auto;
+		width:auto;
+		display:inherit;
+	}
+
+}
